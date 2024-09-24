@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Guia10.Models
 {
@@ -14,7 +15,6 @@ namespace Guia10.Models
         [Required]
         public int AnioFabricacion { get; set; }
 
-        [Required]
         public int? ModeloId { get; set; }
 
         public Modelo? Modelo { get; set; }

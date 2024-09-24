@@ -11,6 +11,6 @@ namespace Guia10.Models
         [StringLength(30, MinimumLength = 3)]
         public string Nombre { get; set; } = string.Empty;
 
-        public List<Modelo>? Modelo { get; set; }
+        public ICollection<Modelo>? Modelo { get; set; }
     }
 }
